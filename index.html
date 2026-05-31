@@ -9,14 +9,20 @@
         :root { --primary: #d4a373; --dark: #3e2723; --light: #fffaf1; --accent: #8d6e63; }
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; background: var(--light); color: var(--dark); line-height: 1.6; }
         
-        header { background: white; border-bottom: 4px solid var(--primary); padding: 60px 20px; text-align: center; }
-        header h1 { font-size: 3em; margin: 0; letter-spacing: 4px; color: var(--dark); }
-        header p { font-style: italic; color: var(--accent); font-size: 1.2em; }
+        header { background: white; border-bottom: 4px solid var(--primary); padding: 40px 20px; text-align: center; }
+        header h1 { font-size: 2.8em; margin: 10px 0 0 0; letter-spacing: 4px; color: var(--dark); }
+        header p { font-style: italic; color: var(--accent); font-size: 1.1em; margin: 5px 0 0 0; }
+        
+        /* ESTILO PARA TU LOGO */
+        .logo { max-width: 120px; height: auto; border-radius: 50%; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
 
         .container { max-width: 900px; margin: auto; padding: 40px 20px; }
         
-        .section { background: white; padding: 40px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); margin-bottom: 40px; border: 1px solid #eee; }
+        .section { background: white; padding: 40px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); margin-bottom: 40px; border: 1px solid #eee; overflow: hidden; }
         h2 { color: var(--accent); border-left: 5px solid var(--primary); padding-left: 15px; margin-bottom: 25px; }
+
+        /* ESTILO PARA LA FOTO PRINCIPAL */
+        .foto-principal { width: 100%; max-height: 350px; object-fit: cover; border-radius: 15px; margin-bottom: 25px; }
 
         .pillars { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
         .pillar-card { text-align: center; padding: 20px; }
@@ -32,18 +38,21 @@
 <body>
 
     <header>
+        <img src="imagenes/logo-plenitud.png" alt="Logo Plenitud" class="logo">
         <h1>PLENITUD</h1>
         <p>Celebrando la vida en el Hogar Miguel León</p>
     </header>
 
     <div class="container">
         <div class="section">
+            <img src="imagenes/abuelitos-celebrando.jpg" alt="Celebración Plenitud" class="foto-principal">
+            
             <h2>Sobre el Proyecto</h2>
             <p><strong>Plenitud</strong> nace del deseo de honrar a nuestros adultos mayores en Cuenca. Cada mes, transformamos una tarde ordinaria en una celebración de vida, fe y salud para los abuelitos del Hogar Miguel León.</p>
         </div>
 
         <div class="section">
-            <h2>Nuestros 3 Pilares</h2>
+            <h2>Nuestros Pilares</h2>
             <div class="pillars">
                 <div class="pillar-card">
                     <i class="fa-solid fa-music"></i>
@@ -58,7 +67,7 @@
                 <div class="pillar-card">
                     <i class="fa-solid fa-hands-praying"></i>
                     <h3>Evangelio</h3>
-                    <p>El mensaje de esperanza de Jesús y un tiempo de oración comunitaria.</p>
+                    <p>Un mensaje de esperanza y un tiempo de oración comunitaria.</p>
                 </div>
             </div>
         </div>
@@ -66,6 +75,7 @@
         <div class="cta-box">
             <h2>¿Sientes el llamado a colaborar?</h2>
             <p>Necesitamos voluntarios para música, apoyo en la logística o donación de insumos saludables.</p>
+            
             <a href="https://script.google.com/macros/s/AKfycbxOMeRGPerrvGc6sxtr47i9GtsJYEvo099EfJBQvbnLHAAqtY8OV5rOhCND1Lcd5_kVzw/exec" target="_blank" class="btn">Cómo ayudo</a>
         </div>
     </div>
